@@ -58,8 +58,8 @@ func newDeckFromFile(filename string) deck {
 
 func (d deck) shuffle() {
 	source := rand.NewSource()
+	r := rand.New(source)
 
-	
 
 	for i := range d {
 		newPosition := rand.Intn(len(d) - 1)
