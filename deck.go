@@ -50,5 +50,7 @@ func newDeckFromFile(filename string) deck {
 		fmt.Println("Error:", err)
 		os.Exit(1)
 	}
-	return deck(strings.Split(string(bs), ","))
+
+	s := strings.Split(string(bs), ",")
+	return deck(s)
 }
