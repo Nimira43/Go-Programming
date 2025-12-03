@@ -1,5 +1,5 @@
 package main
 
-func TestNewDeck() {
-	
+func TestNewDeck(t *testing.T) {
+
 }
